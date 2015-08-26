@@ -1,0 +1,31 @@
+{
+  "connections": [
+    {
+      "port": 4000
+    }
+  ],
+  "plugins": {
+    "good": {
+      "reporters": [
+        {
+          "reporter": "good-console",
+          "events": {
+            "response": "*",
+            "ops": "*",
+            "error": "*",
+            "log": "*"
+          }
+        }
+      ]
+    },
+    "./plugins/rfid_1": {
+      "MODE": "wpi",
+      "READERS": {
+        "door_1": {
+          "DATA_0_PIN": 2,
+          "DATA_1_PIN": 3
+        }
+      }
+    }
+  }
+}
