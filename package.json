@@ -1,0 +1,27 @@
+{
+  "name": "rfid_test_1",
+  "version": "0.0.1",
+  "description": "Home automation rfid test.",
+  "author": "Scott Olson",
+  "license": "MIT",
+  "keywords": [
+    "home",
+    "automation",
+    "rfid",
+    "test"
+  ],
+  "main": "index.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/rejoice/bin/rejoice -c index.json -p ./"
+  },
+  "dependencies": {
+    "good": "^6.3.0",
+    "good-console": "^5.0.3",
+    "hapi": "^8.2.0",
+    "nanotimer": "^0.3.10",
+    "rejoice": "^2.0.1",
+    "underscore": "^1.8.3",
+    "wiring-pi": "^2.1.0"
+  }
+}
